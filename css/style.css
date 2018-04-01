@@ -99,23 +99,11 @@ header .current {
 /* Showcase */
 
 #showcase {
-    background: no-repeat url('../img/banner.jpg')0px 70%;
-    background-size: cover;
-    min-height: 300px;
-    position: static;
-    top: 70px;
+    background: no-repeat url('../img/landing_page_banner.jpeg')0 90%;   
+    background-size: 100%;
+    min-height: 400px;
 }
 
-#showcase h1{
-    text-shadow: #a7a5a5 2px 2px 5px;
-    color: rgb(43, 91, 250);
-    font-size: 50px;
-    margin-top: 50px;
-    font-family: "Helvetica";
-    float: left;
-    text-align: left;
-    margin-left: 10%;
-}
 
 /* Newsletter */
 
