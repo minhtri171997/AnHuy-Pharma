@@ -33,10 +33,9 @@ ul{
 /* Header */
 
 header {
-    background: #2777e0;
+    background: #fbfdff;
     box-shadow: 0px 3px 20px #565961;
     color: #ffffff;
-    padding-top: 15px;
     min-height: 50px;
     position: sticky;
     top: 0;
@@ -45,14 +44,15 @@ header {
 }
 
 header a{
-    color: #ffffff;
+    color: #19428f;
+    margin-top: 15px;
     text-decoration: none;
     text-transform: lowercase;
     font-size: 16px;
 }
 
 header a:hover{
-    color: #cccccc;
+    color: #adadad;
 }
 
 header li{
@@ -63,23 +63,23 @@ header li{
 
 header #branding{
     float: left;
-    height: 40px;
+    height: 45px;
 }
 
 header #branding h1{
-    margin:0;
+    color: #303030;
 }
 header #branding img{
     height: 100%;
 }
 header nav{
-    float: right;
-    margin-top: 5px;
+    float: right;   
+    margin-top: 14px;
 
 }
 .navcon{
     display: flex;
-    flex-direction: row;
+    flex-direw action: row;
 }
 .fixed {
     position: sticky;
@@ -92,8 +92,8 @@ header nav li a{
     font-size: 18px;
 }
 
-header .current {
-    border-bottom: solid 2px white;
+header .current {   
+    border-bottom: solid 2px rgb(66, 131, 192);
 }
 
 /* Showcase */
