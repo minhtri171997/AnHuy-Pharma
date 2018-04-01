@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>An Huy Pharma | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=vietnamese" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id = "branding">
+                <img src="./img/logo.png" >
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="products.html" class ="current">Sản phẩm</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+      
+    
+    <section class = "banner" id="productsbanner">
+            <div class ="container">
+                <a>Sản phẩm</a>
+            </div>
+        </section>
+
+    <section id ="mainproducts">
+        <div class="container">
+            <div class="page-group">
+                    <div class="page-left">
+                        <div class="content-left">
+                            <a>CÁC LOẠI MẶT HÀNG</a>
+                        </div>
+                        <a href="products.html" class="page-left-item" style="font-weight:bold">Thuốc</a>
+                        <a href="products-vtyt.html" class="page-left-item">Vật Tư Y Tế</a>
+                        <a href="products-tpcn.html" class="page-left-item">Thực Phẩm Chức Năng</a>
+                        <a href="products-mp.html" class="page-left-item">Mỹ Phẩm</a>
+                    </div>
+
+                    <div class="page-right">
+                        <div class="product-title">
+                        <h1 class="title">
+                            <p align="center" style="text-align: center; color:orange">Gascumin</p>
+                        </h1>
+                        </div>
+                        <div class="product-content-1">
+                            <li class="product-content-1-left">
+                                <a>
+                                    <img src="gascumin.png";width="500px"; height="400px">
+                                </a>
+                            </li>
+                            <li class="product-content-1-right">
+                                <div class="content-center">
+                                    <p style="font-size: 20px; font-family:Arial;color:#A9A9A9"><span style="font-weight:bold;font-family:Arial; font-size: 26px;color:black;">Nhà cung cấp :</span> Mebiphar</p>
+                                    <p><span style="font-weight:bold;font-family:Arial;font-size: 26px;">Giá bán :</span></p>
+                                    <p><span style="font-weight:bold;font-family:Arial;font-size: 26px; color:orange ">18.000.000.000₫</span></p>
+                                    <p><span style="font-weight:bold;font-family:Arial;font-size: 26px;">Số lượng : </span><input type="number" id="quantity" min="1" max="1000" style="height:26px; width:40px" value='1' ></p>
+                                    <a><button onclick="change()" type="button" id="add-to-cart">Mua Hàng</button>
+                                    <p id="thong-bao" style="font-size: 20px; font-family:Arial;color:#A9A9A9"><span style="font-weight:bold;font-family:Arial; font-size: 26px;color:black;">Tình trạng : </span> Còn hàng</p>
+                                        <script>
+                                            function change()
+                                                {
+                                                document.getElementById("add-to-cart").innerHTML="Updating";
+                                                document.getElementById("thong-bao").innerHTML="Chức năng đang được bảo trì, khách hàng vui lòng liên hệ hotline 0903xxxyyyzzz"
+                                                document.getElementById("thong-bao").style.color='red';
+                                                }
+                                        </script>
+                                </div>
+                        </div>
+                        <div class="product-content-2">
+                            <div class="product-content-text">
+                                <p style="font-weight:bold;font-family:Arial;font-size: 26px;">Thành phần cho 1 viên nang:</p>
+                                <p style="font-family:Arial; font-size:20px; margin-left:5%">Nanocurcumin 5%: 300 mg </p>
+                                <p style="font-family:Arial; font-size:20px; margin-left:5%">Piperin : 2 mg </p>
+                                <p style="font-family:Arial; font-size:20px; margin-left:5%">Vitamin E: 10 IU </p>
+                                <p style="font-family:Arial; font-size:20px; margin-left:5%">Thymomodulin: 20mg </p>
+                                <p style="font-family:Arial; font-size:20px; margin-left:5%">Thành phần khác: Gelatin, PEG 400, glycerin, ethyl vanilin, titan dioxide, màu sunset yellow, natri benzoat, kali sorbat:mVừa đủ 1 viên </p>
+                                <p style="font-weight:bold;font-family:Arial;font-size: 26px;">Chỉ định :</p>
+                                <li style="font-family:Arial; font-size:20px; margin-left:5%">Curiosin Gel được dùng trong các trường hợp da bị tổn thương, như : kích ứng do bức xạ, da khô, da tróc vảy.</li>
+                                <li style="font-family:Arial; font-size:20px; margin-left:5%">Các vết thương ngoài da trong những trường hợp da bị tổn thương nhẹ (như trầy, xước, hay các vết cắt)</li>
+                                <li style="font-family:Arial; font-size:20px; margin-left:5%">Phỏng nhẹ.</li>
+                                <li style="font-family:Arial; font-size:20px; margin-left:5%">Mụn trứng cá, thể nhẹ và vừa</li>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+                </div> 
+            </div> 
+    </section> 
+
+    <section id = "partners">
+        <div class ="container">
+            <div class ="box">
+                <img src ="./img/danapha.jpg">
+                <h3>Danapha</h3>
+            </div>
+            <div class ="box">
+                <img src ="./img/mebiphar.png">
+                <h3>Mebiphar</h3>
+            </div>
+            <div class ="box">
+                <img src ="./img/richter.jpg">
+                <h3>Richter</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>An Huy Pharma, copyright &copy; 2018</footer>
+</body>
+</html>
