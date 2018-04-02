@@ -67,11 +67,11 @@
             <aside id="feedbackform">
                 <div class="dark">
                     <h3>Feedback Form</h3>
-                    <form action="feedback.php" method="post">
-                        <input placeholder="fullname" type="text" name="fullname"> <br>
-                        <input placeholder="email" type="text" name="email"> <br>
-                        <input placeholder="phonenumber" type="text" name="phonenumber"> <br>
-                        <textarea placeholder="your feedback..." name="fbcontent" rows="5" border-radius="2px"></textarea> <br>
+                    <form action="feedback.php" method="post" id="feedbackform">
+                        <input placeholder="fullname" type="text" name="fullname" id="fbFullname"> <br>
+                        <input placeholder="email" type="text" name="email" id="fbEmail"> <br>
+                        <input placeholder="phonenumber" type="text" name="phonenumber" id="fbPhonenumber"> <br>
+                        <textarea placeholder="your feedback..." name="fbcontent" rows="5" border-radius="2px" id="fbContent"></textarea> <br>
                         <input class = "button_1" type="submit">
                     </form>
                 </div>
@@ -109,5 +109,29 @@
     </section>
 
     <footer>An Huy Pharma, copyright &copy; 2018</footer>
+
+    <script>
+        document.getElementById('feedbackform').addEventListener('submit', submitFeedback);
+
+        function submitFeedback(e) {
+            e.preventDefault();
+
+            var fullname = document.getElementById("fbFullname").value;
+            var email = document.getElementById("fbEmail").value;
+            var phonenumber = document.getElementById("fbPhonenumber").value;
+            var content = document.getElementById("fbContent").value;
+
+            var params ="fullname="+fullname+"&email="+email+"&phonenumber="+phonenumber+"&content"+content;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST','feedback.php',true);
+            xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+            xhr.onload = function(){
+                console.log(this.responseText);
+            }
+
+            xhr.send(params);
+        }
+    </script>
 </body>
 </html>

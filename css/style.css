@@ -33,7 +33,7 @@ ul{
 /* Header */
 
 header {
-    background: #fbfdff;
+    background: #388ff3;
     box-shadow: 0px 3px 20px #565961;
     color: #ffffff;
     min-height: 50px;
@@ -42,9 +42,12 @@ header {
     z-index: 500;
     width: 100%;
 }
-
+header .container{
+    margin-top: 0px;
+    padding-top: 3px;
+}
 header a{
-    color: #19428f;
+    color: #ffffff;
     margin-top: 15px;
     text-decoration: none;
     text-transform: lowercase;
@@ -52,13 +55,15 @@ header a{
 }
 
 header a:hover{
-    color: #adadad;
+    color: #f3f3f3;
 }
 
 header li{
     padding: 0 15px 0 15px;
-    float: left;
+    /* float: left; */
     display: inline;
+
+
 }
 
 header #branding{
@@ -74,12 +79,12 @@ header #branding img{
 }
 header nav{
     float: right;   
-    margin-top: 14px;
-
+    margin-top: 10px;
+    height: 100%;
 }
 .navcon{
     display: flex;
-    flex-direw action: row;
+    flex-direction: row;
 }
 .fixed {
     position: sticky;
@@ -93,7 +98,7 @@ header nav li a{
 }
 
 header .current {   
-    border-bottom: solid 2px rgb(66, 131, 192);
+    border-bottom: solid 2px #ffffff;
 }
 
 /* Showcase */
@@ -204,7 +209,7 @@ footer{
 }
 
 #aboutbanner {
-    background: no-repeat url('../img/banner.jpg') 0px 70%;
+    background: no-repeat url('../img/banner.jpg') 0px 70% blur(5px);
     background-size: cover;
     text-align: center;
 }
@@ -493,7 +498,6 @@ ul#addresses li h2 {
     width: 100%;
     height: 100%;
     text-decoration: none;
-
     color: black;
 }
 
