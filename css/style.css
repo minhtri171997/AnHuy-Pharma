@@ -149,12 +149,19 @@ header .current {
 
 #partners{
     margin-top: 15px;
-    background-color: #07224a;
+    background-color: transparent;
     color: white;
     padding:0 10% 0 10%;
+    text-align: center;
+    text-transform: uppercase;
+
     /* margin: 15px 10% 0 10%; */
 }
-
+#partners h1{
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #07224a;
+}
 .box {
     text-decoration: none;
     width: 30%;
@@ -165,8 +172,8 @@ header .current {
     
 }
 .box img{
-    max-height: 170px;
-    min-height: 170px;
+    max-width: 100%;
+    height: auto;
     border: 1px solid #cccccc;
     z-index: 300;
 }
