@@ -630,6 +630,21 @@ ul#addresses li h2 {
     width: 300px;
     min-height: 350px;
 }
+/*=============== Page right class cho trang Others ===========*/
+.page-right-1 {
+    display:flex;
+    flex-direction: column;
+    float: left;
+    width: 100%;
+    min-height: 350px;
+}
+.page-product-display-1{
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    padding-left: 5%;
+    width: 100%;
+}
 
 /*==============================Trang từng sản phẩm style.css=====================================*/
 .product-content-1{
