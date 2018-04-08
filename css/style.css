@@ -13,7 +13,7 @@ body{
     color: #215c77;
 }
 .dark {
-    background-color: #07224a;
+    background-color: #77b2f5;
     color: white;
     padding: 7% 5% 7% 5%;
     margin-top: 15px;
@@ -299,7 +299,7 @@ figure div{
     background: #ffffff;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 0px 3px 10px #393b3f;
+    box-shadow: 0px 3px 10px #696c70;
     /* border-radius: 3px; */
     margin: 10px;
 }
@@ -310,9 +310,6 @@ figure div{
     width: 100%;
 }
 
-.new-product
-
-
 /* Partners */
 
 #partners{
@@ -322,6 +319,7 @@ figure div{
     padding:0 10% 0 10%;
     text-align: center;
     text-transform: uppercase;
+    height: auto;
 
     /* margin: 15px 10% 0 10%; */
 }
@@ -331,6 +329,9 @@ figure div{
     background-color: #07224a;
 }
 .box {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
     text-decoration: none;
     width: 30%;
     float: left;
@@ -339,8 +340,10 @@ figure div{
     z-index: 250;
     
 }
+
 .box img{
-    max-width: 100%;
+
+    width: 182px;
     height: auto;
     border: 1px solid #cccccc;
     z-index: 300;
@@ -348,9 +351,16 @@ figure div{
 .box a{
     text-decoration: none;
 }
+
+.box h3{
+    bottom: 10px;
+    float: bottom;
+}
+
 #partners-container{
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 footer{
@@ -461,7 +471,7 @@ aside#feedbackform form input[type="text"]{
     height: 38px;
     width: 88%;
     margin-right: 5px;
-    border: solid gray 1px; 
+    border: solid gray 0px; 
     border-radius: 2px;
     margin-top: 15px;
     font-size: 15px;
@@ -469,6 +479,12 @@ aside#feedbackform form input[type="text"]{
     padding: 0 10px 0 10px;
 
 }
+
+aside#feedbackform form input[type="submit"]{
+    background-color: #306ac0 ;
+    color: white;
+}
+
 aside#feedbackform h3{
     text-align: center;
     margin-top: 10px;
@@ -478,14 +494,14 @@ aside#feedbackform h3{
  aside#feedbackform form textarea{
     width: 88%;
     
-    border: solid gray 1px; 
+    border: solid gray 0px; 
     border-radius: 2px;
     margin-top: 15px;
     font-size: 15px;
     margin-bottom: 3px;
     
     background: white;
-    padding: 0 10px 0 10px;
+    padding: 4px 10px 0 10px;
  }
 
 /**/
@@ -643,7 +659,7 @@ ul#addresses li h2 {
 }
 /*CLASS TIÊU ĐỀ CONTENT*/
 .content-left{
-    background-color: #13679e;
+    background-color: #77b2f5;
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
 }
@@ -660,7 +676,7 @@ ul#addresses li h2 {
     color: #303030;
     padding-top:10px;
     padding-bottom:10px;
-    background-color:  rgb(241, 253, 253);
+    background-color:  #d8e8fa;
     margin-top: 1px;   
 }   
 
@@ -720,7 +736,7 @@ ul#addresses li h2 {
     background:#ffffff;
     margin-top: 2px;
     width: 90%;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     border-radius: 3px;
 }
 
