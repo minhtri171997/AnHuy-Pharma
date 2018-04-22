@@ -215,9 +215,12 @@ figure div{
     flex-direction: column;
     box-shadow: 0px 3px 10px #565961;
     margin: 10px;
+
 }
 
 .left-news h1{
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     width: 100%;
     color: #ffFFFF
 }
@@ -289,9 +292,9 @@ figure div{
 .right-news h1{
     font-size: 20px;
     font-weight: 100;
-    color: #ffffff
-
-    
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
 }
 
 .new-products-tray{
