@@ -31,12 +31,20 @@ h1{
     margin: auto;
     overflow: hidden;
 }
+
+.container1{
+    width: 95%;
+    margin: auto;
+}
+
 ul{
     padding:0px;
     margin: 0px;
 }
 
 /* Header */
+
+
 
 header {
     background: #388ff3;
@@ -107,6 +115,54 @@ header .current {
     border-bottom: solid 2px #ffffff;
 }
 
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:active {
+    background-color: skyblue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 10000;
+    padding-top: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:active{
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 /* Showcase */
 #showcase *{
     padding: 0;
@@ -451,19 +507,19 @@ footer{
 
 /* ****************** Drop down ****************** */
 .dropdown {
-    display: inline-block;
+    display: none;
     position: relative;
 }
 
 
-.dropdown-content {
+/* .dropdown-content {
     display: none;
     position: absolute;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
-}
+} */
 
 .dropbtn:hover .dropdown-content{
     display: block;
@@ -1021,5 +1077,46 @@ ul#addresses li h2 {
         height: 250px;
         overflow: scroll;
         width:100%;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+    
+    .dropdown:hover .dropbtn{
+        background-color: #1063df;
+    }
+
+    header #branding{
+        padding-top: 5px;
+    }
+
+    header {
+        padding-bottom: 5px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .page-right {
+        width: 95%;
+        margin: auto;
+    }
+
+    .page-right .product-content-1{
+        flex-direction: column;
+    }
+    .page-right .product-content-1-right{
+        width: 100%;
+    }
+    .page-right .product-content-1-right .content-center p{
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 600px){
+    #showcase {
+        height: auto;
     }
 }
