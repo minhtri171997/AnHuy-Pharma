@@ -401,7 +401,7 @@ figure div{
     flex-direction: column;
     height: 100%;
     text-decoration: none;
-    width: 25%;
+    width: 20%;
     text-align: center;
     padding: 10px;
     z-index: 250;
@@ -683,7 +683,7 @@ ul#addresses li h2 {
 .aboutbox{
 
     text-align: left;
-    padding: 15px 5% 5px 5%;
+    padding: 15px 5% 15px 5%;
     background-color: #ebebeb;
     display: flex;
     flex-direction: column;
