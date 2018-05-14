@@ -442,11 +442,49 @@ figure div{
 footer{
     margin-top: 20px;
     padding: 25px;
+    padding-top: 15px;
     color: white;
-    background: #bf2600;
+    background: #1063df;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
+footer .container {
+    text-align: left
+}
+
+footer .container h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;    
+    font-weight: 100;
+    padding: 5px 0;
+    margin: 0;
+}
+
+footer .container h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;    
+    font-weight: 100;
+    padding: 0px 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+footer .container p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: 100;
+    padding: 5px 0;
+    margin: 0;
+}
+
+footer .horizontal-line{
+    background-color: rgba(223, 192, 192, 0.575);
+    height: 1px;
+    width: 60%;
+    margin: 10px auto;
+    margin-bottom: 22px;
+}
 
 
 /* ****************** Banner ****************** */
