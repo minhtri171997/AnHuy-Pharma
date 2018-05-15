@@ -245,6 +245,7 @@ figure div{
 
 }
 .button_1{
+
     padding: 4px;
     height: 38px;
     width: 100px;
@@ -890,13 +891,10 @@ ul#addresses li h2 {
     padding-top:0;
     float:left;
     width: 39%;
-
-
 }
 .page-item-img img{
     max-width: 100%;
     max-height: 100%;
-
 }
 .page-item-name {
     padding-left:5%;
@@ -905,7 +903,6 @@ ul#addresses li h2 {
     padding-top: 2px;
     width:50%;
     height: auto;
-
 }
 .page-item-name h3{
     font-size:25px;
@@ -1110,6 +1107,11 @@ ul#addresses li h2 {
         margin-bottom: 15px;
     }
 
+    .page-item-name .button_1{
+        width: 40%;
+        margin:auto;
+    }
+
     .query-tray {
         display:auto;
         height: 250px;
@@ -1154,6 +1156,20 @@ ul#addresses li h2 {
 }
 
 @media(max-width: 600px){
+    .page-item{
+        flex-direction: column;
+    }
+    .page-item-img,
+    .page-item-name {
+        float: none;
+        margin:auto;
+        width: 90%;
+        text-align: center;
+    }
+    .page-item-name .button_1{
+        width: 40%;
+        margin:auto;
+    }
     #showcase {
         height: auto;
     }
