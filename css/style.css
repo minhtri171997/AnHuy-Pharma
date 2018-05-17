@@ -385,7 +385,7 @@ figure div{
     padding:0 10% 0 10%;
     text-align: center;
     text-transform: uppercase;
-    height: auto;
+    height: 180px;
 
     /* margin: 15px 10% 0 10%; */
 }
@@ -402,11 +402,10 @@ figure div{
     flex-direction: column;
     height: 100%;
     text-decoration: none;
-    width: 20%;
+    width: 16%;
     text-align: center;
-    padding: 10px;
-    z-index: 250;
-    
+    padding: 3px;
+    z-index: 250;       
 }
 
 .box img{
@@ -423,12 +422,13 @@ figure div{
 }
 
 .box h3{
+    display:none;
     bottom: 10px;
     float: bottom;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     text-transform: none;
-    font-size: 25px;
+    font-size: 10px;
     font-weight: 300;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -752,7 +752,7 @@ ul#addresses li h2 {
 
 .aboutbox ul li {
     text-align: left;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 2px;
 }
 
@@ -764,7 +764,9 @@ ul#addresses li h2 {
 }
 
 .aboutbox p{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 .aboutbox .underline{
@@ -1115,10 +1117,10 @@ ul#addresses li h2 {
     .container {
         width: 95%;
     }
-    .box {
+    /* .box {
         width: 170px;
         margin-top: 10px;
-    }
+    } */
 
     #newscontainer {
         flex-direction: column;
@@ -1140,10 +1142,14 @@ ul#addresses li h2 {
         width: 100%;
     }
 
-    #partners-container{
+    #partners {
+        height: 10%;
+    }
+
+    /* #partners-container{
         flex-direction: column;
         height: auto;
-    }
+    } */
 
     aside#feedbackform form input[type="text"],
     aside#feedbackform form textarea
@@ -1172,7 +1178,7 @@ ul#addresses li h2 {
 
     .query-tray {
         display:auto;
-        height: 250px;
+        height: 100%;
         overflow: scroll;
         width:100%;
     }
