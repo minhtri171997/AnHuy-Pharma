@@ -26,7 +26,7 @@
     <header>
         <div class="container1">
             <div id="branding">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="./img/logo.png">
                 </a>
             </div>
@@ -34,7 +34,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html" class="current">Trang chủ</a>
+                        <a href="index.php" class="current">Trang chủ</a>
                     </li>
                     <li>
                         <a href="about.html">Giới thiệu</a>
@@ -53,7 +53,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="index.html">Trang chủ</a>
+                    <a href="index.php">Trang chủ</a>
                     <a href="about.html">Giới thiệu</a>
                     <a href="products.html">Sản phẩm</a>
                     <a href="contact.html">Liên hệ</a>
@@ -120,27 +120,27 @@
                     <div class="new-products-tray">
                         <div class="new-product">
                             <div class="thumbnail">
-                                <a href="#">
-                                    <img src="./img/cao-xoa.png">
+                                <a href="eprazinone.html">
+                                    <img src="./img/eprazinone-500x400.png">
                                 </a>
                             </div>
-                            <a href="">Cao xoa Sao Vang</a>
+                            <a href="">Eprazinone</a>
                         </div>
                         <div class="new-product">
                             <div class="thumbnail">
-                                <a href="#">
+                                <a href="cao-xoa.html">
                                     <img src="./img/cao-xoa.png">
                                 </a>
                             </div>
-                            <a href="">Cao xoa Sao Vang</a>
+                            <a href="">Cao xoa Sao Vàng</a>
                         </div>
                         <div class="new-product">
                             <div class="thumbnail">
-                                <a href="#">
-                                    <img src="./img/cao-xoa.png">
+                                <a href="ong-hit.html">
+                                    <img src="./img/ong-hit.png">
                                 </a>
                             </div>
-                            <a href="">Cao xoa Sao Vang</a>
+                            <a href="">Ống hít Sao Vàng</a>
                         </div>
                     </div>
                 </div>

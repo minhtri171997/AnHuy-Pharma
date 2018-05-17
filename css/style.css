@@ -498,8 +498,27 @@ footer .horizontal-line{
     
 }
 
-.banner a{
-    font-family: 'Open Sans', sans-serif;
+.banner .container {
+    
+    text-align: center;
+}
+
+
+.banner h1{
+    padding:auto;
+    max-width: 30%;
+    margin:auto;
+    font-size: 36px;
+    padding: 0;
+    color: white;
+    background-color: rgba(29, 161, 248, 0.74) ;
+    text-transform: none;
+    font-weight: 300;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 10px;
 }
 
 #contactbanner{
@@ -513,9 +532,9 @@ footer .horizontal-line{
     text-align: right; 
     color:black;
 }
-#productsbanner a{
+/* #productsbanner a{
     color:black;
-}
+} */
 #aboutbanner {
     background: no-repeat url('../img/about-background.jpg') 0 70%;
     background-size: cover;
@@ -523,7 +542,8 @@ footer .horizontal-line{
 }
 
 #aboutbanner a{
-    font-family: 'Roboto', sans-serif;
+    float: none;
+    /* font-family: 'Roboto', sans-serif; */
     color:white;
 }
 
@@ -532,6 +552,8 @@ footer .horizontal-line{
 }
 
 .banner a{
+    top: 40%;
+    float: right;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 
@@ -542,7 +564,7 @@ footer .horizontal-line{
     /* font-family: 'Montserrat', sans-serif; */
     text-decoration: none;
     text-transform: none;
-}
+} 
 
 /* ****************** Drop down ****************** */
 .dropdown {
@@ -804,6 +826,15 @@ ul#addresses li h2 {
     position: sticky;
     top: 100px;
     margin: 5px 0;
+}
+
+#products-menu-button-others{
+    display: block;
+    min-height: 40px;
+    top: 60px;
+}
+#products-menu-button-others .dropdown{
+    display: block;
 }
 
 .products-menu-button .dropdown{
@@ -1184,6 +1215,13 @@ ul#addresses li h2 {
     }
     .products-menu-button{
         display: block;
+    }
+    #products-menu-button-others{
+        top: 100px;
+    }
+    .banner h1{
+        max-width: auto;
+        min-width: 50%;
     }
 }
 
