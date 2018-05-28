@@ -541,6 +541,17 @@ footer .horizontal-line{
     text-align: center;
 }
 
+#recbanner {
+    background: no-repeat url('../img/recruit.jpg') 0px 50%;
+    background-size: cover;
+    text-align: center;
+}
+
+#recbanner a{
+    float: right;
+    color: black;
+}
+
 #aboutbanner a{
     float: none;
     /* font-family: 'Roboto', sans-serif; */
