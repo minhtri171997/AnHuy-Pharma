@@ -172,8 +172,34 @@ header .current {
 #showcase {
     height: 400px;
     width: auto;
+    /* overflow: hidden; */
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    z-index: 500;
+}
+
+.background-showcase {
+    background: no-repeat url('../img/showcase.jpg');
+    background-size: cover;
+    min-height: 400px;
+    min-width: 100%;
     overflow: hidden;
 }
+
+.wrap{
+    top: 200px;
+    position: absolute;
+    float: left;
+    left: 50%;
+}
+
+.logomiddle{
+    height: 100px;
+    width: auto;
+    position: relative;
+    margin :auto;
+    left: -50%;
+}
+.blur {-webkit-filter: blur(4px);filter: blur(4px);}
 figure{
     width: 300%;
     position: relative;
@@ -219,6 +245,70 @@ figure div{
     100%{
         right:0%;
     }
+}
+
+/************* INDEX NAVIGATION ***********/
+
+#index-navigation{
+    width: 100%;    
+
+    background: linear-gradient( to right, #264574, #07224a);
+    /* min-height: 200px; */
+    height: 550px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+}
+
+#index-navigation .container {
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+    width: 70%;
+    height: 90%;
+    display: grid;
+    padding-top: 22px;
+    grid-template-columns: auto auto;
+}
+
+.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+
+.nav-item{
+    background: no-repeat url('../img/showcase.jpg');
+    /* position: absolute; */
+    background-size: cover;
+    text-align: center;
+    /* height: 80%;
+    width: 90%; */
+    /* height: 150px;
+    width: 250px;; */
+    height:auto;
+    width: auto;
+    margin: 20px 30px;
+    /* background: #115ccc; */
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+
+.nav-item  .middle{
+    position: relative;
+    top: 40%;
+    left:50%;
+    font-size: 25px;
+    transform: translate(-50%, -50%);   
+    overflow: hidden;
+}
+
+.nav-item-background{
+    /* background: no-repeat url('../img/showcase.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; */
+
+
 }
 
 /* Newsletter */
@@ -385,7 +475,7 @@ figure div{
     padding:0 10% 0 10%;
     text-align: center;
     text-transform: uppercase;
-    height: 180px;
+    height: 200px;
 
     /* margin: 15px 10% 0 10%; */
 }
@@ -410,8 +500,8 @@ figure div{
 
 .box img{
     margin:auto;
-    width: 100%;
-    height: auto;
+    width: 130px;
+    height: 130px;
     border: 0px solid #cccccc;
     z-index: 300;
 }
@@ -1144,6 +1234,15 @@ ul#addresses li h2 {
 
     #partners {
         height: 10%;
+    }
+
+    #partners .box{
+
+    }
+
+    #partners .container .box img {
+        height: auto;
+        width: 100%;
     }
 
     /* #partners-container{
