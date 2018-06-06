@@ -657,13 +657,15 @@ footer .horizontal-line{
     font-size: 36px;
     padding: 0;
     color: white;
-    background-color: rgba(29, 161, 248, 0.74) ;
+    /* background-color: rgba(29, 161, 248, 0.74) ; */
     text-transform: none;
     font-weight: 300;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Kanit', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
     border-radius: 10px;
 }
 
@@ -673,7 +675,7 @@ footer .horizontal-line{
     text-align: right;
 }
 #productsbanner{
-    background: no-repeat url('../img/banner1.jpg') 0px 70%;
+    background: no-repeat url('../img/products-ocean-background.jpg') 0px 70%;
     background-size: cover; 
     text-align: right; 
     color:black;
@@ -682,7 +684,7 @@ footer .horizontal-line{
     color:black;
 } */
 #aboutbanner {
-    background: no-repeat url('../img/about-background.jpg') 0 70%;
+    background: no-repeat url('../img/about-background.png') 0 70%;
     background-size: cover;
     text-align: center;
 }
@@ -696,6 +698,14 @@ footer .horizontal-line{
 #recbanner a{
     float: right;
     color: black;
+}
+
+#recbanner a p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border-top: 0;
+    border-bottom: 0;
+    padding:0;  
 }
 
 #aboutbanner a{
@@ -712,7 +722,7 @@ footer .horizontal-line{
     top: 40%;
     float: right;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 
     color: white;
     font-size: 36px;
@@ -897,6 +907,11 @@ ul#addresses li h2 {
     text-transform: none;
     font-size: 15px;
 }
+
+#about h2{
+    margin-top: 16px;
+}
+
 .aboutbox1{
     text-align: left;
     padding: 15px 5% 15px 5%;
@@ -917,6 +932,11 @@ ul#addresses li h2 {
     color: #4c78b9;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+}
+
+.aboutbox1 ul{
+    margin-left: 35px;
+
 }
 
 
@@ -1287,11 +1307,16 @@ ul#addresses li h2 {
     .page-left,
     .page-left > a,
     .content-left,
-    .page-left > div
+    .page-left > div,
+    #recbanner a
     {
         float: none;
         text-align: center;
         width: 100%;
+    }
+   
+    #recbanner a p{
+        /* background: rgba(156, 156, 156, 0.658) */
     }
     .container {
         width: 95%;
@@ -1452,5 +1477,11 @@ ul#addresses li h2 {
     }
     #showcase {
         height: auto;
+    }
+}
+
+@media(max-width: 1230px){
+    #recbanner{
+        background: no-repeat url('../img/recruit-banner.jpg') 0px 50%;
     }
 }
