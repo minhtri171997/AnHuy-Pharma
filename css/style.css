@@ -64,8 +64,8 @@ header a{
     color: #ffffff;
     margin-top: 15px;
     text-decoration: none;
-    text-transform: lowercase;
-    font-size: 16px;
+    text-transform: none;
+    font-size: 18px;
 }
 
 header a:hover{
@@ -1310,7 +1310,6 @@ ul#addresses li h2 {
     header #branding,
     header nav,
     header nav li,
-    aside#feedbackform,
     #main-col ul,
     .banner h1,
     .page-left,
@@ -1324,6 +1323,18 @@ ul#addresses li h2 {
         width: 100%;
     }
    
+    aside#feedbackform{
+        float: none;
+        text-align: center;
+        width: 98%;
+    }
+    ul#addresses{
+        padding:0;
+    }
+    .dark{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
     #recbanner a p{
         /* background: rgba(156, 156, 156, 0.658) */
     }
@@ -1384,12 +1395,15 @@ ul#addresses li h2 {
         width: 96%;
         margin-left: 6px;
     }
+    aside#feedbackform form textarea{
+        padding:4px 10px 0 15px;
+    }
 
     .button_1 {
         width: 100%;
         margin-top: 5px;
-        display: block;
-        padding: 4px;
+        /* display: block; */
+        padding: 10px;
         margin-bottom: 15px;
     }
 
@@ -1467,8 +1481,30 @@ ul#addresses li h2 {
     #index-navigation .middle{
         transform: translate(-50%, -50%);
     }
+    .wrap{
+        top:240px;
+    }
 }
-
+@media(max-width: 425px){
+    .wrap{
+        top:160px;
+    }
+    .logomiddle{
+        height: 70px;
+    }
+    .background-showcase{
+        min-height: 200px;
+    }
+    .nav-item{
+        margin: 10px;
+    }
+    #index-navigation{
+        height: 750px;
+    }
+    header a{
+        font-size: 18px;
+    }
+}
 @media(max-width: 600px){
     .page-item{
         flex-direction: column;
