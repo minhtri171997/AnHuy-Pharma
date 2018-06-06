@@ -1,3 +1,10 @@
+<?php
+	$link = mysqli_connect("localhost", "anhuypha", "", "anhuypharmaDB");
+	if($link === false){
+		die("ERROR: Could not connect. " . mysqli_connect_error());
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,36 +68,87 @@
     </header>
 
     <section id="showcase">
-        <div class="background-showcase blur"></div>
-        <a href="index.html" class="wrap">
-            <img src="logo.png" class="logomiddle">
-        </a>
+        <figure id="slide">
+            <div class="slider">
+                <a href="#">
+                    <img src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?cs=srgb&dl=advice-advise-advisor-7096.jpg&fm=jpg">
+                </a>
+            </div>
+
+            <div class="slider">
+                <a href="#">
+                    <img src="https://images.pexels.com/photos/6385/hands-people-woman-meeting.jpg?cs=srgb&dl=advice-advise-advisor-6385.jpg&fm=jpg">
+                </a>
+            </div>
+
+            <div class="slider">
+                <a href="#">
+                    <img src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg?cs=srgb&dl=advice-advise-advisor-7097.jpg&fm=jpg">
+                </a>
+            </div>
+
+        </figure>
     </section>
 
-    <section id="index-navigation">
-        <div class="container">
+    <section id="newsletter">
+        <div class="container" id="newscontainer">
+            <div class="left-news">
+                <h1>Tin tức</h1>
+                <div class="scroller">
+                    <div class="newscontentbox">
+                        <!-- <?php
+							$sql = "SELECT * FROM news ORDER BY id DESC limit 5";
+							if ($result = mysqli_query($link,$sql)) {
+								while ($row = mysqli_fetch_array($result)) {
+									echo "<div class=\"newsbox\">";
+									echo "<div class=\"thumbnail\">";
+									echo "<a href=\"\">";
+                                    echo "<img src=\"".$row["link_image"]."\">";
+									echo "</a>";
+									echo "</div>";
+									echo "<div class=\"news-paragraph\">";
+									echo "<a href=\"\">".$row["title"]."</a>";
+									echo "<p>".$row["description"]."</p>";
+									echo "</div>";
+									echo "</div>";
+								}
+							}
+                        ?> -->
+                    </div>
+                </div>
+            </div>
 
-            <a href="about.html" class="nav-item" id="nav-item1">
-                <div class="middle">
-                    Giới thiệu
+            <div class="right-news">
+                <h1>Các sản phẩm mới</h1>
+                <div class="scroller">
+                    <div class="new-products-tray">
+                        <div class="new-product">
+                            <div class="thumbnail">
+                                <a href="eprazinone.html">
+                                    <img src="./img/eprazinone-500x400.png">
+                                </a>
+                            </div>
+                            <a href="">Eprazinone</a>
+                        </div>
+                        <div class="new-product">
+                            <div class="thumbnail">
+                                <a href="cao-xoa.html">
+                                    <img src="./img/cao-xoa.png">
+                                </a>
+                            </div>
+                            <a href="">Cao xoa Sao Vàng</a>
+                        </div>
+                        <div class="new-product">
+                            <div class="thumbnail">
+                                <a href="ong-hit.html">
+                                    <img src="./img/ong-hit.png">
+                                </a>
+                            </div>
+                            <a href="">Ống hít Sao Vàng</a>
+                        </div>
+                    </div>
                 </div>
-            </a>
-
-            <a href="products.html" class="nav-item" id="nav-item2">
-                <div class="middle">
-                    Sản phẩm
-                </div>
-            </a>
-            <a href="contact.html" class="nav-item" id="nav-item3">
-                <div class="middle">
-                    Liên hệ
-                </div>
-            </a>
-            <a href="tuyendung.html" class="nav-item" id="nav-item4">
-                <div class="middle">
-                    Tuyển dụng
-                </div>
-            </a>
+            </div>
 
         </div>
     </section>
@@ -128,14 +186,14 @@
         <div class="container">
             <h1>Thông tin liên hệ</h1>
             <h2>Công ty dược An Huy</h2>
-            <p>Địa chỉ: Toà nhà HS, lầu 3&4, 260/11 Nguyễn Thái Bình, P.12, Quận Tân Bình, TP Hồ Chí Minh
-                <br> Email: anhuy@anhuypharma.com
-                <br> Điện thoại: 028 39481836
-                <br> Fax: 028 39481837</p>
+            <p>Địa chỉ: Toà nhà HS, lầu 3&4, 260/11 Nguyễn Thái Bình, P.12, Quận Tân Bình, TP Hồ Chí Minh <br>
+            Email: anhuy@anhuypharma.com <br>
+            Điện thoại: 028 39481836 <br>
+            Fax: 028 39481837</p>
         </div>
         <div class="horizontal-line"></div>
         <div>
-            An Huy Pharma, copyright &copy; 2018
+        An Huy Pharma, copyright &copy; 2018
         </div>
     </footer>
 </body>
