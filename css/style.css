@@ -751,6 +751,28 @@ ul#addresses li h2 {
     text-transform: none;
     font-size: 15px;
 }
+.aboutbox1{
+    text-align: left;
+    padding: 15px 5% 15px 5%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+.aboutbox1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    height: 10px;
+}
+.aboutbox1 h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40px;
+    color: #4c78b9;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 .aboutbox{
 
