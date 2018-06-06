@@ -1259,6 +1259,11 @@ ul#addresses li h2 {
     height:auto;
     color:black;
 }
+.product-content-1-right p{
+    padding: 0;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
 .product-content-1-right .content-center p{
     text-align: left;
     padding-left:20%;
@@ -1272,6 +1277,7 @@ ul#addresses li h2 {
     background-color:white;
     border:1px solid blue;
     border-radius:5px;
+    margin: 12px;
 }
 .product-content-2{
     width:80%;
@@ -1287,9 +1293,12 @@ ul#addresses li h2 {
 
     -webkit-flex-flow:row;
     justify-content: space-around;
-    }
+}
 
-
+.product-content-text p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
 
 /* Media Queries */
 
