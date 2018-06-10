@@ -44,7 +44,10 @@ ul{
 
 /* Header */
 
-
+#Language nav{
+    width: 100%;
+    float:right;
+}
 
 header {
     background: #388ff3;
