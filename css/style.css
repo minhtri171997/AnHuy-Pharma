@@ -534,7 +534,7 @@ figure div{
     padding:0 10% 0 10%;
     text-align: center;
     text-transform: uppercase;
-    height: 200px;
+    height: 280px;
 
     /* margin: 15px 10% 0 10%; */
 }
@@ -544,23 +544,39 @@ figure div{
     background-color: #388ff3;
     font-family: 'Roboto', sans-serif;
     text-transform: none;
+    /* margin-bottom: 5px; */
+}
+#partners .container {
+    width: 50%;
+}
+.sec-partner{
+    padding: 0 20%;
+}
+.sec-partner .box{
+    height: 75px;
+    width: 75px;
+}
+.sec-partner .box img{
+    height: 70px;
+    width: 70px;
 }
 .box {
     display: flex;
     margin: auto;
     flex-direction: column;
-    height: 100%;
+    height: 100px;
     text-decoration: none;
-    width: 16%;
+    width: 100px;
     text-align: center;
     padding: 3px;
-    z-index: 250;       
+    z-index: 250;
+    border-radius: 3px;       
 }
 
 .box img{
     margin:auto;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
     border: 0px solid #cccccc;
     z-index: 300;
 }
@@ -583,8 +599,14 @@ figure div{
     margin-bottom: 3px;
 }
 
-#partners-container{
+.partners-box{
     display: flex;
+    flex-direction: column;
+}
+
+.partners-container{
+    margin-bottom: 15px;
+    display:flex;
     flex-direction: row;
     height: 100%;
 }
@@ -596,7 +618,7 @@ footer{
     color: white;
     background: #1063df;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer .container {
@@ -604,26 +626,25 @@ footer .container {
 }
 
 footer .container h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;    
-    font-weight: 100;
+    
+    font-size: 20px;    
+    font-weight: 500;
     padding: 5px 0;
     margin: 0;
 }
 
 footer .container h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;    
-    font-weight: 100;
+    
+    font-size: 20px;    
+    font-weight: 500;
     padding: 0px 0;
     margin: 0;
     text-transform: uppercase;
 }
 
 footer .container p{
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;  
-    font-weight: 100;
+    font-size: 16px;  
+    font-weight: 500;
     padding: 5px 0;
     margin: 0;
 }
@@ -735,6 +756,14 @@ footer .horizontal-line{
     text-decoration: none;
     text-transform: none;
 } 
+
+/* ****************** Language Bar *************** */
+.language-box{
+    float: right;
+}
+.language-box p {
+    margin-bottom: 0;
+}
 
 /* ****************** Drop down ****************** */
 .dropdown {
@@ -931,7 +960,7 @@ ul#addresses li h2 {
 .aboutbox1 h2{
     margin-top: 5%;
     margin-bottom: 5%;
-    height: 40px;
+
     color: #4c78b9;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -1305,9 +1334,7 @@ ul#addresses li h2 {
 
 /* Media Queries */
 
-.query-tray{
 
-}
 
 @media(max-width: 768px){
     header #branding,
@@ -1374,18 +1401,29 @@ ul#addresses li h2 {
     }
 
     #partners .box{
-
+        border-radius: 10px;
+        width: 30%;
     }
 
     #partners .container .box img {
-        height: auto;
-        width: 100%;
+        height: 70px;
+        width: 70px;
     }
 
-    /* #partners-container{
-        flex-direction: column;
-        height: auto;
-    } */
+    .partners-container{
+        margin-bottom: 5px;
+    } 
+    #partners .container {
+        width: 100%;
+    }
+    .sec-partner{
+        padding: 0;
+    }
+    .sec-partner .box{
+        height: 100px;
+        width: 100px;
+    }
+    
 
     aside#feedbackform form input[type="text"],
     aside#feedbackform form textarea

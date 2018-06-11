@@ -7,10 +7,10 @@
 
     <title>An Huy Pharma | Welcome</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500|Roboto|Source+Sans+Pro:200,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500|Roboto|Source+Sans+Pro:200,300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -29,10 +29,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">Trang chủ</a>
+                        <a href="index.html" class="current">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="about.html" class="current">Giới thiệu</a>
+                        <a href="about.html">Giới thiệu</a>
                     </li>
                     <li>
                         <a href="products.html">Sản phẩm</a>
@@ -44,17 +44,15 @@
                         <a href="tuyendung.html">Tuyển Dụng</a>
                     </li>
                 </ul>
-            </nav> 
-            </nav> 
-                    <div> Language : <a href="about.html"> <span class="flag-icon flag-icon-vn"></span><a href="about_en.html"> <span class="flag-icon flag-icon-gb"></span></div>
-            <nav>
+            </nav>
+
             <div class="dropdown">
                 <button class="dropbtn">
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="dropdown-content">
                     <a href="index.html">Trang chủ</a>
-                    <a href="index.html">Giới thiệu</a>
+                    <a href="about.html">Giới thiệu</a>
                     <a href="products.html">Sản phẩm</a>
                     <a href="contact.html">Liên hệ</a>
                     <a href="tuyendung.html">Tuyển dụng</a>
@@ -67,6 +65,24 @@
     <section class="banner" id="aboutbanner">
         <div class="container">
             <a>Giới thiệu về Công ty dược An Huy</a>
+        </div>
+    </section>
+    <section id="language-bar">
+        <div class="container">
+            <div class="language-box">
+                <p>Language:
+                    <span>
+                        <a href="about.html">
+                            <span class="flag-icon flag-icon-vn"></span>
+                        </a>
+                    </span>
+                    <span>
+                        <a href="about_en.html">
+                            <span class="flag-icon flag-icon-gb"></span>
+                        </a>
+                    </span>
+                </p>
+            </div>
         </div>
     </section>
     <section id="about">
@@ -119,8 +135,14 @@
     <section id="partners">
         <div class="container">
             <h1>Các đối tác</h1>
-            <div class="query-tray">
-                <div id="partners-container">
+            <div class="partners-bo">
+                <div class="partners-container">
+                    <a href="#" class="box">
+                        <img src="./img/kimdo.png">
+                        <h3>Kim Đô</h3>
+                    </a>
+                </div>
+                <div class="partners-container sec-partner">
                     <a href="http://www.danapha.com/" class="box">
                         <img src="./img/danapha.jpg">
                         <h3>Danapha</h3>
@@ -133,10 +155,7 @@
                         <img src="./img/richter-170x170.png">
                         <h3>Gedeon Richter</h3>
                     </a>
-                    <a href="#" class="box">
-                        <img src="./img/kimdo.png">
-                        <h3>Kim Đô</h3>
-                    </a>
+
                 </div>
             </div>
 
